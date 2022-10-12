@@ -20,7 +20,7 @@ SFM2-S SPC 업로드 불합리에 대한 현장 설비 집중성 파악
 '''
 [LOG SAMPLE]
 2022/09/03 04:18:28.703 eMEC_PBI_START
-2022/09/03 04:18:29.531 RESULT - PcbSerial : 000000, Head[06] -< Cycle : 0055, Block : 01, Array : 005, X : 3.295(um), Y : -3.580(um), R : 0.0528(deg), Score : 0000 >
+2022/09/03 04:18:29.531 RESULT - PcbSerial : 000000, Head[06] - < Cycle : 0055, Block : 01, Array : 005, X : 3.295(um), Y : -3.580(um), R : 0.0528(deg), Score : 0000 >
 
 
 '''
@@ -45,7 +45,7 @@ def parse(line):
    
     # 추출대상 값들을 Parser의 {:w}로 파싱 > 각 값들은 배열로 반환됨
   
-    result = search("PcbSerial : {}, Head[{}] -< Cycle : {}, Block : {}, Array : {}, X : {}(um), Y : {}(um), R : {}(deg), Score : {}", line)
+    result = search("PcbSerial : {}, Head[{}] - < Cycle : {}, Block : {}, Array : {}, X : {}(um), Y : {}(um), R : {}(deg), Score : {}", line)
     
 
     # 파싱결과값들을 CSV형식으로 편집
